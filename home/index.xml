@@ -41,10 +41,10 @@
     
     <item>
       <title>Software</title>
-      <link>/home/posts/</link>
+      <link>/home/software/</link>
       <pubDate>Sat, 03 Mar 2018 22:22:22 +0000</pubDate>
       
-      <guid>/home/posts/</guid>
+      <guid>/home/software/</guid>
       <description>Xiaoyue Cheng and Dianne Cook (2016). cartogram: Create Cartograms in R. URL: https://github.com/chxy/cartogram.
  Xiaoyue Cheng, Lindsay Rutter, Amy Froelich and Dianne Cook (2016). ePort: Electronic Reporting of Academic Learning and Performance. URL: https://github.com/introstat/ePort.
  Yihui Xie, Heike Hofmann, Di Cook, Xiaoyue Cheng, Barret Schloerke, Marie Vendettuoli, Tengfei Yin, Hadley Wickham, Michael Lawrence (2015). cranvas: Interactive Statistical Graphics Based on Qt. URL: https://github.com/ggobi/cranvas.

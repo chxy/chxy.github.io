@@ -23,6 +23,24 @@
     
     <url>
     
+      <loc>/project/visualizing_migration/</loc>
+      <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/working_memory/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/review_on_datascience50years/</loc>
       <lastmod>2017-12-19T00:00:00+00:00</lastmod>
     </url>
@@ -32,26 +50,8 @@
     
     <url>
     
-      <loc>/project/working_memory/</loc>
-      <lastmod>2017-05-05T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/project/latino_population/</loc>
       <lastmod>2017-04-17T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/jsm_2016/</loc>
-      <lastmod>2017-01-01T00:00:00-06:00</lastmod>
     </url>
     
   
@@ -77,6 +77,42 @@
     
     <url>
     
+      <loc>/publication/enabling_interactivity_on_temporal_and_longitudinal_displays/</loc>
+      <lastmod>2016-11-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/jsm_2016/</loc>
+      <lastmod>2016-08-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/beijing_forum_2016/</loc>
+      <lastmod>2016-05-29T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/qingdao_univ_2016/</loc>
+      <lastmod>2016-05-19T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/software/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00-06:00</lastmod>
     </url>
@@ -86,8 +122,80 @@
     
     <url>
     
+      <loc>/publication/visually_exploring_missing_values/</loc>
+      <lastmod>2015-12-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/unl_2015/</loc>
+      <lastmod>2015-11-18T00:00:00-06:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/software/2015-07-23-r-rmarkdown/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/toronto_2015/</loc>
+      <lastmod>2015-02-25T00:00:00-06:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/reactive_programming_for_interactive_graphics/</loc>
+      <lastmod>2014-08-18T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/jsm_2014/</loc>
+      <lastmod>2014-08-06T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/jsm_2012/</loc>
+      <lastmod>2012-07-31T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/jsm_2011/</loc>
+      <lastmod>2011-08-04T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/brazil_2009/</loc>
+      <lastmod>2009-05-12T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -135,7 +243,7 @@
     <url>
     
       <loc>/tags/demo/</loc>
-      <lastmod>2017-04-17T00:00:00+00:00</lastmod>
+      <lastmod>2018-02-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -145,7 +253,7 @@
     <url>
     
       <loc>/tags/experimental-psychology/</loc>
-      <lastmod>2017-05-05T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -165,7 +273,7 @@
     <url>
     
       <loc>/project/</loc>
-      <lastmod>2017-05-05T00:00:00+00:00</lastmod>
+      <lastmod>2018-02-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

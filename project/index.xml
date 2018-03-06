@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 05 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Experimental Study on Short-term Visual-spatial Working Memory</title>
+      <title>Visualizing Migration in the Age-group Population Data</title>
+      <link>/project/visualizing_migration/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/visualizing_migration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experimental Study on Short-term Visual-spatial Location Memory</title>
       <link>/project/working_memory/</link>
-      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/project/working_memory/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>

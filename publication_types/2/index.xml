@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Xiaoyue Cheng&#39;s Website</title>
+    <link>/publication_types/2/</link>
+    <description>Recent content in 2 on Xiaoyue Cheng&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Tue, 19 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Focusing on the needs: Experiences of Developing a Data Science Program</title>
+      <link>/publication/review_on_datascience50years/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/review_on_datascience50years/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enabling Interactivity on Temporal and Longitudinal Displays</title>
+      <link>/publication/enabling_interactivity_on_temporal_and_longitudinal_displays/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/enabling_interactivity_on_temporal_and_longitudinal_displays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visually Exploring Missing Values in Multivariable Data Using a Graphical User Interface</title>
+      <link>/publication/visually_exploring_missing_values/</link>
+      <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/visually_exploring_missing_values/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Programming for Interactive Graphics</title>
+      <link>/publication/reactive_programming_for_interactive_graphics/</link>
+      <pubDate>Mon, 18 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/reactive_programming_for_interactive_graphics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

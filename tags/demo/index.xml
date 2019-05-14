@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>demo on Xiaoyue Cheng&#39;s Website</title>
+    <link>/tags/demo/</link>
+    <description>Recent content in demo on Xiaoyue Cheng&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Thu, 01 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/demo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visualizing Migration in the Age-group Population Data</title>
+      <link>/project/visualizing_migration/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/visualizing_migration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nebraska Latino Population Growth and Political Engagement</title>
+      <link>/project/latino_population/</link>
+      <pubDate>Mon, 17 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/latino_population/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

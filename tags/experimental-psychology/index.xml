@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>experimental psychology on Xiaoyue Cheng&#39;s Website</title>
+    <link>/tags/experimental-psychology/</link>
+    <description>Recent content in experimental psychology on Xiaoyue Cheng&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 29 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/experimental-psychology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Experimental Study on Short-term Visual-spatial Location Memory</title>
+      <link>/project/working_memory/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/working_memory/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

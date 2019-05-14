@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Xiaoyue Cheng&#39;s Website</title>
+    <link>/publication_types/1/</link>
+    <description>Recent content in 1 on Xiaoyue Cheng&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Wed, 30 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interactive Visualization of Latino Political Participation in Nebraska and USA</title>
+      <link>/publication/jsm_latino_population/</link>
+      <pubDate>Wed, 30 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/jsm_latino_population/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Estimation of Student Attendance Threshold for K-12 Education</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Xiaoyue Cheng     Mahbubul Majumder     Tamara Williams" />
+    <link href="libs/remark-css/unomaha.css" rel="stylesheet" />
+    <link href="libs/remark-css/unomaha-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Estimation of Student Attendance Threshold for K-12 Education
+### Xiaoyue Cheng     Mahbubul Majumder     Tamara Williams
+### <br><br>Joint Statistical Meetings<br>8/1/2019
+
+---
+
+
+
+
+## Background
+
+- A project collaborated with Nebraska Department of Education (NDE)
+
+- Overarching goal
+  &gt; *To identify the threshold for the number of absent days after which the impact on student outcomes necessitates prevention or intervention in Nebraska public schools.*
+
+- By current Nebraska attendance laws, schools are required to refer all students absent more than 20 days (whether the absences were excused or not) to their local county attorney.
+
+- There were parents calling to change the attendance policy. (http://netnebraska.org/article/news/attendance-policy-revisions-left-school-boards)
+
+---
+
+## Data
+
+- Before cleaning
+    - 10 years data: 07/08 - 16/17
+    - Student level (days absent, days present, grade, gender, race, immigrant, homeless, state test scores, etc.)
+    - School level (number of students, etc.)
+    - School district level (annual number of school days, etc.)
+
+- After cleaning and business rules
+    - 7 years data: 10/11 - 16/17
+    - Math and reading scores for grades 3,4,5,6,7,8,11
+    - Percent absent replaces days absent and days present
+    - Entries by student and year
+
+---
+
+## Map of percent absent by school
+
+![:scale 100%](image/Absent_by_school_NE.png)
+
+---
+
+## Percent absent vs. Test score
+
+![](threshold_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+
+---
+
+## Mixed effects analysis
+
+`$$\texttt{y}=\texttt{X} \beta +\texttt{Z}u+\varepsilon$$`
+
+- Response
+    - Test score
+- Fixed effects
+    - percent absent, course, school count, grade level, gender, race, percent school days, homeless, highly mobile, immigrant, school membership, year
+- Random effects
+    - student
+    - school and school district (not used)
+
+#### Variable selection
+
+- Nonlinear forms for percent absent
+- Interaction terms
+
+---
+
+## Threshold estimation
+
+- The limitation of linear mixed model is that it doesn't help to estimate the percent absent threshold.
+- Not much work is done for threshold estimation with education data (Paredes &amp; Ugarte, 2011). 
+- Similar research mainly focuses survival and financial data, which has different definition of "threshold".
+- Related methods include threshold regression (Dagenais, 1969; Lee &amp; Whitmore, 2006) and panel threshold regression (Hansen, 1999).
+
+---
+
+## Panel threshold regression (PTR)
+
+- Model
+
+`$$y_{it}=\alpha_i+\beta_1'x_{it}\mathbb{I}_{(q_{it}\leq c)}+\beta_2'x_{it}\mathbb{I}_{(q_{it}&gt;c)}+\varepsilon_{it}$$`
+- Where
+    - `\(i\)` for individual and `\(t\)` for time
+    - `\(\alpha_i\)` is a fixed effect
+    - `\(q\)` is a threshold variable and `\(q_{it}\)` is scalar
+    - `\(c\)` is a threshold parameter
+    - `\(x_{it}\)` is a `\(k\)`-vector regressor
+
+--
+
+- Estimation
+`$$\hat{c}=\underset{c\in\Theta}{\arg\min}SSR(c)$$`
+
+---
+
+## Result by PTR
+
+![](threshold_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+
+--
+
+#### Is it too early for schools to report to county attorney?
+
+---
+
+## A different approach
+
+- PTR model is modified for attendance problem to measure the average score difference between two groups whose percent absent is split by the threshold.
+
+`$$y=\alpha\mathbb{I}_{(q\leq c)}+\textit{X}\beta +\textit{Z}u +\varepsilon$$`
+
+- Where
+    - `\(q\)` is percent absent and `\(c\)` is the threshold parameter.
+    - `\(\textit{X}\)` include other fixed effects.
+    - `\(\textit{Z}\)` are random effects.
+
+---
+
+## A close look at `\(\alpha\)`
+
+- `\(\alpha\)` is the average score difference between two groups split by threshold `\(c\)`.
+    - `\(\alpha\)` is expected to be positive, as previous studies in education field showed that more absence resulted in worse test score.
+    - For `\(c\)` in a reasonable range (say, 1% - 25%), `\(\alpha\)` is non-decreasing.
+
+--
+
+### `\(\alpha\)` and the goal
+
+- A good time for early intervention is the time that `\(\alpha\)` starts to increase at a fast speed.
+- The threshold for the highest impact on student academic outcomes (real action is needed, e.g. report to attorney) should be the time when the acceleration rate of `\(\alpha\)` reaches the peak.
+
+---
+
+## Estimation of `c`
+
+- There can be a functional relationship between `\(\alpha\)` and `\(c\)`
+    - `\(\alpha = f(c)\)` for `\(c\in (c_1,c_2)\)`, where `\(f\)` is a non-decreasing function.
+    - Note: `\(f\)` is a step function as percent absent is not strictly continous.
+
+--
+
+- Assume `\(\alpha = f(c)+\epsilon\)` where `\(f\)` is a non-decreasing differentiable function.
+- The threshold estimation `\(\hat{c}\)` is the point of inflection, i.e., `\(f'\)` has a maximum at `\(\hat{c}\)`.
+- An early warning can be given at the inflection point of `\(f'\)` assuming `\(f\)` is twice differentiable.
+
+---
+
+## Result: `alpha` vs. `c`
+
+![](threshold_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
+
+---
+
+## Result: threshold estimation
+
+![](threshold_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+
+---
+
+## Result: math vs. reading
+
+![](threshold_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+
+---
+
+## Result: male vs. female
+
+![](threshold_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+
+---
+
+## Result: grade levels
+
+![](threshold_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+---
+
+## Summary
+
+- Proposing a new algorithm to estimate the threshold of absence days after which the impact on student outcomes necessitates prevention or intervention in Nebraska public schools.
+- Focusing on the coefficient that estimated the average score difference between two groups.
+- Using the inflection point to estimate the threshold.
+- Suggesting two thresholds: one for early intervention and one for the highest impact on student outcomes.
+- Result for early intervention threshold coincides with panel threshold regression.
+- Comparing the absenteeism impact between courses and population groups.
+
+---
+
+class: inverse, center, middle
+
+## Acknowledgements
+
+### We gratefully acknowledge the data and support provided by Nebraska Department of Education.
+
+---
+
+## References
+
+1. Hansen, B. E. (1999). Threshold effects in non-dynamic panels: Estimation, testing, and inference. Journal of econometrics, 93(2), 345-368.
+
+2. Dagenais, M. G. (1969). A threshold regression model. Econometrica: Journal of Econometric Society, 193-203.
+
+3. Lee, M. L. T., &amp; Whitmore, G. A. (2006). Threshold regression for survival analysis: modeling event times by a stochastic process reaching a boundary. Statistical Science, 21(4), 501-513.
+
+4. Paredes, R. D., &amp; Ugarte, G. A. (2011). Should students be allowed to miss?. The Journal of Educational Research, 104(3), 194-201.
+
+5. Skedgell, K. (2016). Predictors of absenteeism severity in truant youth: A dimensional and categorical analysis. American Secondary Education, 45(1), 46.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="http://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
